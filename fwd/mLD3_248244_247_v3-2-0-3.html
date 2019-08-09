@@ -1,0 +1,167 @@
+﻿<html lang="de" version="-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="Andreas Kielkopf" name="author1">
+<meta content="Martin Austen" name="author2">
+<title>Firmware für Lokdecoder mLD /3</title>
+<!-- artikelnr=".*" -->
+<!-- teilenr="248244" -->
+<!-- herstellkennung="131|255" -->
+<!-- revision="66" -->
+<!-- version="3.2.0.3" -->
+<!-- typ="bfo" -->
+<!-- decodertyp="247" -->
+<!-- filename="mLD3_248244_247_v3-2-0-3.fwd" -->
+<!-- md5sum="079AE593654A432549116E112BCFFDFC" -->
+<!-- signatur="C79DFAD7607E13EE39CCB0467394C510076DB5524E7D2FFC" -->
+</head>
+<body>
+<p><br></p>
+<table width="98%" border="1" cellpadding="4" align="center" valign="middle">
+	<tr>
+		<th align="center" colspan="3">Firmware für einen märklin Lok Decoder</th>
+	</tr>
+	<tr>
+		<th align="Center" width="25%">Decoder</th>
+		<td align="Center">mLD /3 - märklin Lok Decoder /3</td>
+		<td align="center" rowspan="7" width="25%"><table valign="middle">
+			<tr>
+				<td align="center"><img alt="Lokbild" src="../icons/mLD3.png"></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<th align="Center">Spur</th>
+		<td align="Center">H0</td>
+	</tr>
+	<tr>
+		<th align="Center">Protokolle</th>
+		<td align="Center">Analog : AC, DC<br>Digital : MM, DCC, MFX+</td>
+	</tr>
+	<tr>		
+		<th align="Center">Artikel</th>
+		<td align="Center">-</td>
+	</tr>
+	<tr>
+		<th align="Center">Typ</th>
+		<td align="Center"><b>Seriendecoder / Spielewelt</b></td>
+	</tr>
+	<tr>
+		<th align="Center">Version (fwd)</th>
+      <td align="Center">3.2.0.3</td>
+	</tr>
+	<tr>
+		<th align="Center">Datum</th>
+      <td align="Center">06. Dezember 2018</td>
+	</tr>
+</table><br>
+<p><hr></p>
+<h3>Changelog</h3>
+<p>Dieser Changelog soll Ihnen helfen zu erkennen, welche Verbesserungen an der Firmware von Version zu Version
+        durchgeführt wurden. Bitte haben Sie Verständnis, dass kleinere oder unbedeutende Änderungen hier nicht
+        erwähnt werden können. Sprünge in den Versionsnummern deuten auf interne Weiterentwicklungen hin, die
+        nicht ausgeliefert wurden.</p>
+<h4>Version: 3.2.0.3 (06. Dezember 2018)</h4><ul>
+<li>Improvement: Funktion Anhalten mit konstantem Bremsweg wurde verbessert</li>
+<li>Improvement: Der Dampfschlag kann jetzt auch ins Mapping geroutet werden, um beispielsweise einen Rauchsatz zu steuern</li>
+<li>Bugfix: Die Störanfälligkeit bei prellenden Sensoren wurde reduziert</li>
+<li>Bugfix: Die Steuerung des SUSI-Spannungspuffers wurde überarbeitet</li>
+<li>Bugfix: Ein Fehler in der Berechnung des SUSI-Zyklus wurde behoben</li>
+<li>Bugfix: Sound-CVs werden nur bei angeschlossenem Märklin-Soundmodul angezeigt</li>
+<li>Bugfix: Zustandsänderungen der Flip-Flops löst jetzt korrekt eine Regelbearbeitung aus</li>
+<li>Bugfix: Ein SUSI-Puffer wird jetzt zuverlässig bei DCC-Programmierung abgeschaltet</li>
+<li>Bugfix: Ein Fehler bei dem die Kommunikation zwischen mDecoderTool3 und Decodertester gestört war wurde behoben</li>
+</ul>
+<h4>Version: 3.2.0.2 (14. September 2018)</h4><ul>
+  <li>Improvement: Während des Programmierens in DCC treten weniger Störungen auf</li>
+  <li>Improvement: Die Überstromerkennung wurde verbessert</li>
+  <li>Improvement: Die Geschwindigkeit des SUSI-Bus wurde erhöht</li>
+  <li>Improvement: Die Fahreigenschaften im analogen AC-Betrieb wurden verbessert</li>
+  <li>Bugfix: Ein Fehler, bei dem manche Loks während des mfx-Anmeldevorgangs losfuhren, wurde beseitigt</li>
+  <li>Bugfix: Ein Fehler bei den Flip-Flops wurde beseitigt</li>
+  <li>Bugfix: Mehrere kleine Fehler im SUSI-Spannungspufferbetrieb wurden behoben</li>
+  <li>Bugfix: Ein Fehler, bei dem nach einem Update die Spieleweltfunktion ausgeschaltet war, wurde behoben</li>
+  <li>Bugfix: Die Erkennung der Fahrtrichtung im analogen DC-Betrieb wurde verbessert</li>
+  <li>Bugfix: Verbesserung der Kommunikation mit dem neuen Märklin-Decodertester</li>
+  <li>Bugfix: Ein Fehler, bei dem nach dem Umprogrammieren noch teilweise alte Daten vorhanden waren, wurde behoben</li>
+</ul>
+<h4>Version: 3.2.0.1 (29. Juni 2018)</h4><ul>
+<li>Feature: Neuer Ausgangsmodus Genaue Zeit Schalten</li>
+<li>Feature: Neuer Ausgangsmodus Minimum Zeit Schalten</li>
+<li>Feature: Neuer Ausgangsmodus Genaue Zeit ein- und mit Sensor ausschalten</li>
+<li>Feature: Neuer Ausgangsmodus Dauerhaft Einschalten</li>
+<li>Feature: Neuer Ausgangsmodus Puffersteuerung</li>
+<li>Feature: Mapping um acht UND-Gatter erweitert</li>
+<li>Feature: Mapping um acht ODER-Gatter erweitert</li>
+<li>Feature: Mapping um acht XODER-Gatter erweitert</li>
+<li>Feature: Mapping um vier Flip-Flops erweitert</li>
+<li>Feature: Konstanter Bremsweg eingeführt, einstellbar über CV</li>
+<li>Improvement: Strombegrenzter Motor-Ausgang, einstellbar für Digital- und Analogbetrieb über CV in %</li>
+<li>Improvement: Strombegrenzte AUX-Ausgänge, einstellbar über CV in mA</li>
+<li>Improvement: Asymptotisches Auslaufen der Lok wurde verbessert</li>
+<li>Improvement: Erkennen von Märklin SUSI-Teilnehmern</li>
+<li>Improvement: Bereinigen und Erweitern der mfx/CC-Struktur</li>
+<li>Bugfix: Motorzucken und Lichtflackern bei AC-Umschaltimpuls beseitigt</li>
+<li>Bugfix: Logische Funktion Fahrtwechsel korrigiert</li>
+<li>Bugfix: Fehler bei der Ein-/Auschaltverzögerung von Auxen  korrigiert</li>
+</ul>
+<h4>Version: 3.2.0.0 (9. Oktober 2017)</h4><ul>  
+<li>Improvement: Neuer Motortyp 8 für Motoren die nur eine kurze EMK-Messpause benötigen (Robel, div. Glockenanker etc.)</li>
+<li>Improvement: SUSI-Puffersteuerung für externe Kapazitive-Spannungspuffer über CV einstellbar</li>
+<li>Improvement: Neue Funktion "Motor Stopp" zum Steuern von Funktionsmodellen</li>
+<li>Improvement: Neuer Befehl "SUSI-Slow" für Funktionsmodelle (Begrenzt die Höchstgeschwindigkeit bei ausgefahrener Bühne/Kran/etc.)</li>
+<li>Bugfix: Fehler im Reglerteil beseitigt</li>
+<li>Bugfix: Fehler in der mfx-Verarbeitung beseitigt</li>
+</ul>
+<h4>Version: 3.0.1.12 (25. Januar 2018)</h4><ul>
+ <li>Bugfix: Ermitteln der Last nur während der Fahrt und egal ob mit oder ohne Verbrauch</li>
+</ul>
+<h4>Version: 3.0.1.11 (12. Dezember 2017)</h4><ul>
+  <li>Feature: Neuer Ausgangsmodus für neue Telexkupplung (FGL-Kupplung)</li>
+</ul>
+<h4>Version: 3.0.1.10 (22. November 2017)</h4><ul>
+  <li>Bugfix: Formatwechsel nach Motorola überarbeitet, Gleisempfang verbessert</li>
+  <li>Bugfix: Fehler in DC-Bremsstrecke bei Vorwärtsfahrt behoben</li>
+</ul>
+<h4>Version: 3.0.1.9 (14. Juni 2017)</h4><ul>
+  <li>Improvement: Die BUS-Funktionen auf F20 erweitert (SUSI)</li>
+  <li>Improvement: In Motorola steht mit der 4. Adresse die F16 zur Verfügung</li>
+  <li>Bugfix: Bei Stopp/Go oder Aus/Ein einer Zentrale die DC-Bremsstrecke überarbeitet</li>
+</ul>
+<h4>Version: 3.0.1.8 (11. April 2017)</h4><ul>
+  <li>Bugfix: Aufblitzen der Ausgänge beim Einschalten behoben, z.B. bei gedimmtem oder gezoomtem Ausgang</li>
+</ul>
+<h4>Version: 3.0.1.7 (23. März 2017)</h4><ul>
+  <li>Improvement: Spur H0 Decoder für Spur 1 mit mehr Motorstrom, Analogbetrieb überarbeitet</li>
+  <li>Bugfix: Fehler im 2-Punkt-Regler bei automatischen Abläufen (Kupplungswalzer) korrigiert</li>
+  <li>Bugfix: Bereits programmierte Decoder mit anderem Projekt Programmieren, nicht alle CV-Bereiche wurden korrekt programmiert</li>
+  <li>Bugfix: Erkennen und Auflösen einer DC-Bremsstrecke überarbeitet</li>
+</ul>
+<h4>Version: 3.0.1.6 (15. Dezember 2016)</h4><ul>
+  <li>Improvement: Ein Spur-H0 Decoder als Ersatzteildecoder für Spur-1 mit mehr Motorstrom</li>
+  <li>Bugfix: Fehler beim Formatwechsel nach Motorola behoben</li>
+</ul>
+<h4>Version: 3.0.1.5 (31. August 2016)</h4><ul>
+  <li>Bugfix: Fehler der Richtungsumkehr im Analogbetrieb korrigiert</li>
+  <li>Bugfix: Faktor Last von den Füllständen der Betriebsstoffe jetzt unabhängig</li>
+  <li>Impovement: Überstromabschaltung an den physikalischen Ausgängen überarbeitet</li>
+</ul>
+<h4>Version: 3.0.1.4 (8. August 2016)</h4><ul>
+  <li>Improvement: Adaptive Überstromerkennung für Digital- und Analogbetrieb</li>
+</ul>
+<h4>Version: 3.0.1.2 (10. Mai 2016)</h4><ul>
+  <li>Improvement: mLD3 mit angeschlossenem Märklin Soundmodul (SUSI), Auflösung der Dampfschläge verbessert.</li>
+</ul>
+<h4>Version: 3.0.1.1 (19. April 2016)</h4><ul>
+  <li>Improvement: Fahrverhalten in Analog AC verbessert, Störungen unterdrückt, Netzspannung und PWM synchronisiert</li>
+</ul>
+<h4>Version: 3.0.1.0 (29. März 2016)</h4><ul>
+  <li>Bugfix: Funktionen bei Richtungs- oder Fahrtwechsel wurden nach jedem Stop/Go ausgelöst, auch dann wenn kein Wechsel stattfand</li>
+  <li>Improvement: mLD3 unterstützt jetzt das Märklin Soundmodul (SUSI)</li>
+</ul>
+<h4>Version: 3.0.0.32 (25. November 2015)</h4><ul>
+  <li>Entspricht dem Auslieferungszustand der Nachrüstdecoder im Herbst 2015</li>
+</ul>
+<p><hr></p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿<html lang="de" version="-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="Andreas Kielkopf" name="author1">
+<meta content="Martin Austen" name="author2">
+<title>Firmware für Sounddecoder mSD /3</title>
+<!-- artikelnr=".*" -->
+<!-- teilenr="248245" -->
+<!-- herstellkennung="131|255" -->
+<!-- revision="68" -->
+<!-- version="3.2.0.2" -->
+<!-- typ="bfo" -->
+<!-- decodertyp="245" -->
+<!-- filename="mSD3_248245_245_v3-2-0-2.fwd" -->
+<!-- md5sum="6B70CA15C4E6C77F7C940DC26592C3AF" -->
+<!-- signatur="D849A806F8F540E4CC723ADEEAFB7F2A80A11046668C4C9C" -->
+</head>
+<body>
+<p><br></p>
+<table width="98%" border="1" cellpadding="4" align="center" valign="middle">
+   <tr>
+      <th align="center" colspan="3">Firmware für einen märklin Sound Decoder</th>
+   </tr>
+   <tr>
+      <th align="Center" width="25%">Decoder</th>
+      <td align="Center">mSD /3 - märklin Sound Decoder /3</td>
+      <td align="center" rowspan="8" width="25%"><table valign="middle">
+         <tr>
+            <td align="center"><img alt="Lokbild" src="../icons/mSD3.png"></td>
+         </tr>
+      </table></td>
+   </tr>
+   <tr>
+      <th align="Center">Spur</th>
+      <td align="Center">1</td>
+   </tr>
+   <tr>
+      <th align="Center">Soundspeicher</th>
+      <td align="Center">64 MBit</td>
+   </tr>
+   <tr>
+      <th align="Center">Protokolle</th>
+      <td align="Center">Analog : AC, DC<br>Digital : MM, DCC, MFX</td>
+   </tr>
+   <tr>      
+      <th align="Center">Artikel</th>
+      <td align="Center">-</td>
+   </tr>
+   <tr>
+      <th align="Center">Typ</th>
+      <td align="Center"><b>Seriendecoder</b></td>
+   </tr>
+   <tr>
+      <th align="Center">Version (fwd)</th>
+      <td align="Center">3.2.0.2</td>
+   </tr>
+   <tr>
+      <th align="Center">Datum</th>
+      <td align="Center">14. September 2018</td>
+   </tr>
+</table><br>
+<p><hr></p>
+<h3>Changelog</h3>
+<p>Dieser Changelog soll Ihnen helfen zu erkennen, welche Verbesserungen an der Firmware von Version zu Version
+        durchgeführt wurden. Bitte haben Sie Verständnis, dass kleinere oder unbedeutende Änderungen hier nicht
+        erwähnt werden können. Sprünge in den Versionsnummern deuten auf interne Weiterentwicklungen hin, die
+   nicht ausgeliefert wurden.</p>
+<h4>Version: 3.2.0.2 (14. September 2018)</h4><ul>
+  <li>Improvement: Während der DCC Programmierung wird die Soundendstufe ausgeschaltet, weniger Störungen durch weniger Stromverbrauch, Verbesserung für Spur G und Decoder-Tester</li>
+  <li>Improvement: Decoder mit Spannungspuffer konnte an einr CS nicht in den Bootloadermodus versetzt werden</li>
+  <li>Improvement: Analogsound für Spur G verbessert</li>
+  <li>Improvement: Die Überstromerkennung lässt zum Einschaltzeitpunkt kurzzeitig mehr Strom zu, um mehrere gleichzeitig einzuschaltende Glühbirnchen zu ermöglichen</li>
+  <li>Improvement: Verbesserungen für Spur G, u.a. Lautstärkepoti implementiert</li>
+  <li>Bugfix: Die Lok fuhr während der mfx Anmeldung mit einer letzten bekannten Fahrstufe</li>
+  <li>Bugfix: Im Mapping werden die RS-Flip-Flops mit gültiger Anfangsstellung initialisiert</li>
+  <li>Bugfix: Abläufe für den SUSI-Spannungspuffer geändert, ab- und wieder anschalten vom Puffer, Pufferbefehle im SUSI-Zyklus vorrangig behandeln</li>
+  <li>Bugfix: Beim Decoder mit mfx+ war nach Update von Firmware v3.0.X.X (FDS v1) auf v3.2.0.1 (FDS v3) die Spielewelt dauerhaft aus, da fehlerhafte mDecoderTool Vorlage (FDS v1)</li>
+  <li>Bugfix: Fahrverhalten in Analog AC verbessert</li>
+  <li>Bugfix: Richtungserkennung in Analog DC verbessert</li>
+  <li>Bugfix: Der Decoder konnte mit mDecoderTool und Decodert-Tester nicht getestet werden wenn der Decoder unmittelbar zuvor Analog betrieben wurde</li>
+  <li>Bugfix: Beim programmieren/updaten der lokspezifischen Einstellungen wurden nicht alle gespeicherten Daten zurück gesetzt, z.B. Multiansage Fahrstufe Funktionszustände</li>
+  <li>Bugfix: Beim mSD/3 für Spur G wurde der Anfang der Sounds u.a. die ersten Silben einer Multibahnhofsansage verschluckt</li>
+  <li>Bugfix: Eine Dampflok hatte nur bei jedem zweiten Zylinderschlag gewufft</li>
+</ul>
+<h4>Version: 3.2.0.1 (29. Juni 2018)</h4><ul>
+  <li>Feature: mSD/3 als Spur 1 und Spur G eingeführt</li>
+  <li>Feature: Neuer Ausgangsmodus Genaue Zeit Schalten</li>
+  <li>Feature: Neuer Ausgangsmodus Minimum Zeit Schalten</li>
+  <li>Feature: Neuer Ausgangsmodus Genaue Zeit ein- und mit Sensor ausschalten</li>
+  <li>Feature: Neuer Ausgangsmodus Dauerhaft Einschalten</li>
+  <li>Feature: Neuer Ausgangsmodus Puffersteuerung</li>
+  <li>Feature: Neuer Ausgangsmodus für neue Telexkupplung (FGL-Kupplung)</li>
+  <li>Feature: Neue logische Funktion "Fahrsound im Leerlauf Halten" ermöglicht den Kupplungswalzer auch mit eingeschaltetem Fahrsound</li>
+  <li>Feature: Mapping um acht UND-Gatter erweitert</li>
+  <li>Feature: Mapping um acht ODER-Gatter erweitert</li>
+  <li>Feature: Mapping um acht XODER-Gatter erweitert</li>
+  <li>Feature: Mapping um vier Flip-Flops erweitert</li>
+  <li>Feature: Konstanter Bremsweg eingeführt, einstellbar über CV</li>
+  <li>Feature: Fahrsound kann von Fahrstufe oder von Last beeinflusst werden, per CV einstellbar</li>
+  <li>Improvement: Mapping um Mute-Funktion erweitert</li>
+  <li>Improvement: Strombegrenzter Motor-Ausgang, einstellbar für Digital- und Analogbetrieb über CV in %</li>
+  <li>Improvement: Strombegrenzte AUX-Ausgänge, einstellbar über CV in mA</li>
+  <li>Improvement: Asymptotisches Auslaufen der Lok wurde verbessert</li>
+  <li>Improvement: Erkennen von Märklin SUSI-Teilnehmern</li>
+  <li>Improvement: Parameter für Bremsenquietschen per CV einstellbar</li>
+  <li>Improvement: Bereinigen und Erweitern der mfx/CC-Struktur</li>
+  <li>Bugfix: Motorzucken und Lichtflackern bei AC-Umschaltimpuls beseitigt</li>
+  <li>Bugfix: Letzter Bahnhof der Multi-Bahnhofsansage wird gespeichert</li>
+  <li>Bugfix: Logische Funktion Fahrtwechsel korrigiert</li>
+  <li>Bugfix: Fehler im Richtungswechselsound behoben</li>
+  <li>Bugfix: Fehler bei der Ein-/Auschaltverzögerung von Auxen  korrigiert</li>
+</ul>
+<p><hr></p>
+</body>
+</html>

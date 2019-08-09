@@ -1,0 +1,139 @@
+[mfxms2]
+version
+ .minor=3
+block
+ .name=Info - Root
+ .id=1
+ .item
+  ..name=Lok-Symbol CS1
+  ..tag=0x14
+  ..type=Struct
+  ..subitem
+   ...name=Byte 1
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Byte 2
+   ...offset=1
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Byte 3
+   ...offset=2
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Byte 4
+   ...offset=3
+   ...length=1
+   ...type=Int
+ .item
+  ..name=Decodername
+  ..tag=0x18
+  ..length=16
+  ..type=String
+ .item
+  ..name=Benutzerdaten
+  ..tag=0x19
+  ..length=16
+  ..type=String
+block
+ .name=Motor
+ .id=5
+ .item
+  ..name=Motor-Typ
+  ..tag=0x11
+  ..length=1
+  ..type=Int
+ .item
+  ..name=Xcel
+  ..tag=0x13
+  ..type=Struct
+  ..subitem
+   ...name=AV
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=BV
+   ...offset=1
+   ...length=1
+   ...type=Int
+ .item
+  ..name=Speed
+  ..tag=0x17
+  ..type=Struct
+  ..subitem
+   ...name=VMin
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=VMax
+   ...offset=1
+   ...length=1
+   ...type=Int
+ .item
+  ..name=Tacho
+  ..tag=0x18
+  ..length=2
+  ..type=Little
+block
+ .name=Output
+ .id=6
+ .item
+  ..name=Phys %0
+  ..tag=0x10
+  ..type=Struct
+  ..subitem
+   ...name=Mode
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem 
+   ...name=Dimm
+   ...offset=1
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Period
+   ...offset=2
+   ...length=1
+   ...type=Int
+ .item
+  ..name=Logic %1
+  ..tag= 0x11
+  ..type=Struct
+  ..subitem
+   ...name=Type
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Par
+   ...offset=1
+   ...length=1
+   ...type=Int
+ .item
+  ..name=Sound %2
+  ..tag= 0x12
+  ..type=Struct
+  ..subitem
+   ...name=Type
+   ...offset=0
+   ...length=1
+   ...type=Int
+  ..subitem
+   ...name=Par
+   ...offset=1
+   ...length=1
+   ...type=Int
+block
+ .name=Sound
+ .id=8
+ .item
+  ..name=Lautstärke
+  ..tag=0x10
+  ..length=1
+  ..type=Int

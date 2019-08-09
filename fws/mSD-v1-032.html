@@ -1,0 +1,129 @@
+<html lang="de" version="-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="Andreas Kielkopf" name="author1">
+<meta content="Martin Austen" name="author2">
+<title>Firmware für Sounddecoder mSD</title>
+<!-- artikelnr=".*"       -->
+<!-- teilenr=".*"                      -->
+<!-- herstellkennung="(77|255)"        -->
+<!-- revision="[01]"                   -->
+<!-- version="1.32"					   -->
+<!-- filename="mSD-v1-032.fws"		   -->
+<!-- md5sum="B6D898D502F370B23170A0A194154B2B" -->
+<!-- signatur="FD21276DC028E010BAA91CEBD206B2D689361779AC18CBA3" -->
+</head>
+<body>
+<h2>Firmware (Soundteil) für einen märklin Decoder</h2>
+<p>Diese Firmware ist für updatefähige Sounddecoder geeignet.
+	Diese Firmware passt nicht zu früher produzierten Sounddecodern aus Serienlokomotiven.
+	Unabhängig vom verwendeten Sound wird jeweils die selbe Firmware verwendet.</p>
+<p></p>
+<table width="75%" border="1" cellpadding="4" align="center" valign="middle">
+	<tr>
+		<th align="center" colspan="3">Sound-Firmware für einen märklin Sound Decoder</th>
+	</tr>
+	<tr>
+		<th width="70" align="Center">Decoder</th>
+		<td align="Center">mSD - märklin Sound Decoder</td>
+		<td align="center" rowspan="5"><table valign="middle">
+			<tr>
+				<td align="center"><img alt="Lokbild" src="../icons/mSD.png"></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<th align="Center">Spur</th>
+		<td align="Center">H0, 1</td>
+	</tr>
+	<tr>		
+		<th align="Center">Artikel</th>
+		<td align="Center">updatefähige Sounddecoder</td>
+	</tr>
+	<tr>
+		<th align="Center">Version</th>
+		<td align="Center">1.032</td>
+	</tr>
+	<tr>
+		<th align="Center">Datum</th>
+		<td align="Center">5. November 2014</td>
+	</tr>
+</table><br>
+<p><hr></p>
+<h3>Changelog</h3>
+<p>Dieser Changelog soll Ihnen helfen zu erkennen, welche Verbesserungen an der
+	Firmware von Version zu Version durchgeführt wurden. Bitte haben Sie Verständnis,
+	dass kleinere oder unbedeutende Änderungen hier nicht erwähnt werden können.
+	Sprünge in den Versionsnummern deuten auf interne Weiterentwicklungen hin, die
+	nicht ausgeliefert wurden.</p>
+	<h4>Version: 1.032 (5. November 2014)</h4><ul>
+	<li>Feature: Einzellautstärke auch für Zufallsounds</li>
+	<li>Feature: Zylinderausblasen bei Dampflok verbessert</li>
+	<li>Bugfix: Soundaussetzer im Leerfall bei Dampflok beseitigt</li></ul>
+	<h4>Version: 1.030 (5. August 2014)</h4><ul>
+	<li>Bugfix: Fehler in der Soundsteuerung fuer Dieselmotoren beseitigt</li>
+	<li>Bugfix: Verbesserte Buskommunikation</li></ul>
+	<h4>Version: 1.027 (15. November 2013)</h4><ul>
+	<li>Feature: Zufallssound manuell abschaltbar</li>
+	<li>Bugfix: Verbesserte Zugbuskommunikation</li>
+	<li>Bugfix: Zufallssound manuell wieder einschaltbar</li></ul>
+	<h4>Version: 1.026 (15. Oktober 2013)</h4><ul>
+	<li>Bugfix: Plausibilitaetskontrolle der Nachlaufloops</li></ul>
+	<h4>Version: 1.025 (31. Juli 2013)</h4><ul>
+	<li>Bugfix: Lautstärke in der Bremsstrecke</li>
+	<li>Bugfix: AUX5/6 Lichtbilder</li>
+	<li>Bugfix: kleinere Bugfixes  im Dampfloksound</li></ul><h4>Version: 1.024 (30. April 2013)</h4><ul>
+	<li>Bugfix: Fehler in der Beschaltung externer Eingänge beseitigt</li>
+	<li>Bugfix: Richtungswechselsound wird in beide Richtungen abgespielt</li></ul>
+	<h4>Version: 1.023 (2. April 2013)</h4><ul>
+	<li>Bugfix: Kammfiltereffekt bei zweimotorigen Diesellok unterdrückt</li>
+	<li>Bugfix: Bandbreitenfehler in Kanal 1 beseitigt</li></ul>
+	<h4>Version: 1.022 (23. Januar 2012)</h4><ul>
+	<li>Feature: Ermöglicht manuelles Einstellen für radsynchrones beenden des Bremsenquietschens mittels mDT</li></ul>	
+	<h4>Version: 1.021 (21. Dezember 2012)</h4><ul>
+	<li>Bugfix fuer v1.020</li></ul>
+	<h4>Version: 1.020 (19. November 2012)</h4><ul>
+	<li>Feature: Updatefaehigkeit fuer updatefaehige Seriendecoder</li>
+	<li>Feature: Bremsenquietschen ueber Fahrstufe Zentrale == 0 oder Sound 241 gesetzt fuer Computersteuerung</li>
+	<li>Feature: Zufallsgenerator unterscheidet zwischen Sounds wärend der Fahrt, dem Stand oder beidem</li></ul>
+	<h4>Version: 1.018 (19. September 2012)</h4><ul>
+	<li>Feature: Versionabfrage - Um neue Logiken abwärtskompatibel zu gestalten, werden Versionsnummern für die unterschiedlichen Logiken eingeführt</li>
+	<li>Feature: Gruppengrenzen, Anfangs- und Endsampleraten können variabel eingestellt werden (Motorlogiken ab Version 2)</li>
+	<li>Feature: Anfahrloops und Waitzeiten beim Anfahren können variabel eingestellt werden (Motorlogiken ab Version 2)</li>
+	<li>Feature: Auskullern der Maschine kann in Länge, Endsamplerate und Endlautstärke eingestellt werden (Motorlogiken ab Version 2)</li>
+	<li>Feature: Neue Wuffzeitenberechnung ohne Tabelle (Dampfloklogik ab Version 2)</li>
+	<li>Feature: Neue Multibahnhofsansage - Aussenansagen im Stil Epoche III/IV (Multitextansage ab Version 2)</li>
+	<li>Bugfix: Überarbeitetes Bremsenquitschen: Zeit bis zum Stillstand der Lok wird berechnet und löst das Bremsenquitschen aus bzw. beendet dies</li>
+	<li>Bugfix: Bei Fahrstufe Zentrale == 0 und Fahrstufe Lok wird immer der Leerlast gehalten</li>
+	<li>Bugfix: Individuelle Lautstaerke des Fahrgeraeusches wieder einstellbar (Bug in v1.014)</li></ul>
+	<h4>Version: 1.017 (29. Juni 2012)</h4><ul>
+	<li>Ab dieser Firmwareversion wird der märklin Sound Programmer 60801 unterstützt</li>
+	<li>Feature: Lautstärkeberechnung in Echtzeit für alle Kanäle</li>
+	<li>Feature: Mute-Fader</li>
+	<li>Feature: Lastreaktionen über Lautstärkeberechnung</li>
+	<li>Feature: Logarithmische Lautstärkeregelung</li>
+	<li>Bugfix: FM Sprung bei Gruppenwechseln wurde beseitigt</li>
+	<li>Bugfix: Deadlock bei Zufallsgenerator verhindert</li></ul>
+	<h4>Version: 1.013 (08. Mai 2012)</h4><ul>
+	<li>Feature: Zufallssounds werden per Zufallsgenerator ausgelöst</li>
+	<li>Feature: E-Lok Schaltergeräusche werden auch beim reduzieren der Fahrstufe Lok abgespielt</li>
+	<li>Feature: Keine Zufallsgesaeusche mehr beim Ausschaltvorgang</li>
+	<li>Bugfix: Die Anfahrsperre der Lok auf Bremsstrecken wurde überarbeitet</li>
+	<li>Bugfix: Der erste Dampfschlag kommt erst nach einer viertel Radumdrehung</li>
+	<li>Bugfix: Fehlerbehandlung für leere Fahrsoundslots </li></ul>
+	<h4>Version: 1.012 (27. Februar 2012)</h4><ul>
+	<li>Feature: Auslösungsbedingungen für Sounds in Abhängigkeit von Stand/Fahrt und Fahrtrichtung</li>
+	<li>Feature: Systematik für Langeweilesound, startet im Stand und läuft eine gewisse Zeit</li>
+	<li>Feature: Mutesound,  wenn Mute aktiviert ist, ist der Sound aus</li>
+	<li>Feature: Willkürsound,  einer von sechs Sounds wird willkürlich abgespielt</li>
+	<li>ChgReq: Die externen Eingänge überarbeitet, Startbedingung geändert/verallgemeinert und Config Variablen verlagert</li>
+	<li>Bugfix: Während dem Sound Bremse lösen konnte ein Deadlock bei Wait erreicht werden, d.h. die Lok stand ewig</li>
+	<li>Feature: Der Richtungswechselsound löst nur die sinnvollen Sounds aus (derzeit < 127)</li>
+	<li>Feature: Ein Quantifizierungsverfahren zur Reduktion der Sounddatenmenge implementiert</li>
+</ul>
+<h4>Version: 1.010 (28. September 2011)</h4><ul>
+  <li>Entspricht dem Auslieferungszustand der Nachrüstdecoder im Herbst 2011</li>
+</ul>
+<p><hr></p>
+</body>
+</html>

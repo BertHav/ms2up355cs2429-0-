@@ -1,0 +1,102 @@
+﻿<html lang="de" version="-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="Andreas Kielkopf" name="author1">
+<meta content="Martin Austen" name="author2">
+<title>Firmware für Lokdecoder mLD und Sounddecoder mSD</title>
+<!-- artikelnr="609[46][0256789]" -->
+<!-- teilenr="147823|159112|171345|171344" -->
+<!-- herstellkennung="131|255" -->
+<!-- revision="[02]" -->
+<!-- version="1.17.19.0" -->
+<!-- filename="mLD-v1-17-19-0.fwd" -->
+<!-- md5sum="5A91866A7191A03FFA9417104E7DF14F" -->
+<!-- signatur="4387F2AF803E75948719A0E59EBFB490B04E2BB4EFDF9B13" -->
+</head>
+<body>
+<h2>Firmware (Decoderteil) für einen märklin Decoder</h2>
+<p>Diese Firmware ist nur geeignet für ein Update eines Nachrüstdecoders.
+	Diese Firmware passt nicht zu Spieleweltdecodern oder Seriendecodern.</p>
+<p></p>
+<table width="75%" border="1" cellpadding="4" align="center" valign="middle">
+	<tr>
+		<th align="center" colspan="3">Decoder-Firmware für einen märklin Lok/Sound Decoder</th>
+	</tr>
+	<tr>
+		<th width="70" align="Center">Decoder</th>
+		<td align="Center"><b>- Nachrüstdecoder -</b><br>mLD - märklin Lok Decoder<br>mSD - märklin Sound Decoder</td>
+		<td align="center" rowspan="6"><table valign="middle">
+			<tr>
+				<td align="center"><img alt="Lokbild" src="../icons/mLD.png"></td>
+			</tr>
+			<tr>
+				<td align="center"><img alt="Lokbild" src="../icons/mSD.png"></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<th align="Center">Spur</th>
+		<td align="Center">H0</td>
+	</tr>
+	<tr>
+		<th align="Center">Protokolle</th>
+		<td align="Center">Analog : AC, DC<br>Digital : MM, DCC, MFX</td>
+	</tr>
+	<tr>		
+		<th align="Center">Artikel</th>
+		<td align="Center">60940, 60942, 60945, 60946, 60947, 60948, 60949, 60962, 60965, 60966, 60967</td>
+	</tr>
+	<tr>
+		<th align="Center">Version</th>
+		<td align="Center">1.17.19.0</td>
+	</tr>
+	<tr>
+		<th align="Center">Datum</th>
+		<td align="Center">23. April 2014</td>
+	</tr>
+</table><br>
+<p><hr></p>
+<h3>Changelog</h3>
+<p>Dieser Changelog soll Ihnen helfen zu erkennen, welche Verbesserungen an der
+	Firmware von Version zu Version durchgeführt wurden. Bitte haben Sie Verständnis,
+	dass kleinere oder unbedeutende Änderungen hier nicht erwähnt werden können.
+	Sprünge in den Versionsnummern deuten auf interne Weiterentwicklungen hin, die
+	nicht ausgeliefert wurden.</p>
+<h4>Erste Stelle der Versionsnummer enthält den Decodertyp:</h4><ul>
+    <li>bei Spur H0 : 1=Nachrüster, 2=Spielewelt, 4=Serie-Trix, 5=Serie-Märklin</li>
+    <li>bei Spur G/1 : 6=Serie-LGB, 7=Serie-Märklin</li></ul>
+<h4>Version: 1.17.19.0 (23. April 2014)</h4><ul>
+    <li>Bugfix: Von Bootloader und Firmware im Wechsel genutzter Speicher optimiert.</li>
+</ul>
+<h4>Version: 1.15.19.0 (14. Februar 2014)</h4><ul>
+  <li>Bugfix: Gleichzeitiger Betrieb der Protokolle MFX und DCC durch verbesserten Bitempfang stabilisiert.</li>
+  <li>Bugfix: Die Abfragen auf Freigabe durch den Soundablauf (Wait) wurde optimiert.</li>
+  <li>Bugfix: Für Analogsound im LGB Decoder die Ausgabe der Trafospannung an den Sound stabilisiert.</li>
+</ul>
+<h4>Version: 1.12.17.0 (22. April 2013)</h4><ul>
+  <li>ChgReq: Kleinere Verbesserungen beim Empfang der Gleissignale, für den MFX-Betrieb.</li>
+  <li>ChgReq: Weiterentwicklung der Motorregelung und zusammenführen einzelner Versionen.</li>
+  <li>ChgReq: Dynamische Reduktion des I-Anteils der Motorregelung über Motortyp einstellbar.</li>
+  <li>ChgReq: Strombegrenzung der Motorregelung bei schnellem aufdrehen des Trafos im Analogbetrieb.</li>
+  <li>Bugfix: Programmieren der nicht MFX CV's von MFX aus überarbeitet, z.B. die Motorola-Adresse. Es werden nur noch die aktiven nicht MFX CV´s angezeigt.</li>
+  <li>ChgReq: Für LGB den CV-Zugriff um Register/Paged-CV Adressierung erweitert. Für ältere Universal-Handys 55015.</li>
+  <li>ChgReq: Ab dieser Firmwareversion wurde für LGB der Analogsound eingeführt.</li>
+  <li>ChgReq: Die Kommunikation mit dem märklin Sound-Programmer 60801 stabilisiert.</li>
+</ul>
+<h4>Version: 1.11.15.0 (29. Januar 2013)</h4><ul>
+  <li>Bugfix: Die Kommunikation mit dem märklin Sound-Programmer 60801 stabilisiert.</li>
+  <li>ChgReq: Kleinere Verbesserungen beim Protokollwechsel, für den MFX-Betrieb.</li>
+</ul>
+<h4>Version: 1.9.15.0 (10. Mai 2012)</h4><ul>
+  <li>ChgReq: Ab dieser Firmwareversion wird der märklin Sound-Programmer 60801 unterstützt.</li>
+  <li>Bugfix: Begrenzung der Min/Max-Berechnung im ungeregelten Analogbetrieb bei hoher Spannung wie mit LGB Trafos.</li>
+  <li>ChgReq: Kleinere Verbesserungen im internen Ablauf der Firmware, für einen stabileren Betrieb.</li>
+  <li>Bugfix: Die Sound Ausgaenge (SUSI) im Funktionsmapping auch bei einem mLD zur Verfügung stellen.</li>
+  <li>ChgReq: Eintrag 'Firmware Info' überarbeitet, mit Firmware-Typ und FDS-Version.</li>
+</ul>
+<h4>Version: 1.8.14.0 (10. Oktober 2011)</h4><ul>
+  <li>Entspricht dem Auslieferungszustand der Nachrüstdecoder im Herbst 2011</li>
+</ul>
+<p><hr></p>
+</body>
+</html>
